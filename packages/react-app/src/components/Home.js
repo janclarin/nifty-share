@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Container } from "react-bootstrap";
 import Customizer from "./Customizer";
 import NftFrame from "./NftFrame";
 import "./Home.css";
@@ -10,20 +9,23 @@ function Home() {
   const [itemId, setItemId] = useState("fakeItemId");
 
   return (
-    <Container className="d-flex flex-column align-items-center">
-      <NftFrame
-        backgroundColor={backgroundColor}
-        textColor={textColor}
-        itemId={itemId}
-      />
-      <Customizer
-        className="customizer"
-        backgroundColor={backgroundColor}
-        textColor={textColor}
-        onBackgroundColorChange={setBackgroundColor}
-        onTextColorChange={setTextColor}
-      />
-    </Container>
+    <div>
+      <div className="nft-frame">
+        <NftFrame
+          backgroundColor={backgroundColor}
+          textColor={textColor}
+          itemId={itemId}
+        />
+      </div>
+      <div className="customizer">
+        <Customizer
+          backgroundColor={backgroundColor}
+          textColor={textColor}
+          onBackgroundColorChange={setBackgroundColor}
+          onTextColorChange={setTextColor}
+        />
+      </div>
+    </div>
   );
 }
 
