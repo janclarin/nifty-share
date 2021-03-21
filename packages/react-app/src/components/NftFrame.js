@@ -17,13 +17,11 @@ function NftFrame(props) {
 
   return (
     <div
-      className="frame"
+      className="frame text-center"
       style={{ backgroundColor: props.backgroundColor, color: props.textColor }}
     >
-      <div className="text-center">
-        <Image className="img-fluid nft-image" src={metadata.contentURI} />
-        <h1 className="nft-name">{metadata.name}</h1>
-      </div>
+      <Image className="nft-image" fluid src={metadata.contentURI} />
+      <h1 className="nft-name">{metadata.name}</h1>
     </div>
   );
 }

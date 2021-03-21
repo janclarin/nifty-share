@@ -2,11 +2,6 @@
     padding: 64px;
 }
 
-.nft-image {
-    max-height: 480px;
-    max-width: 480px;
-}
-
 .nft-name {
     margin-top: 16px;
 }
