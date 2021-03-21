@@ -36,7 +36,7 @@
     "ipfs-http-client": "^45.0.0",
     "react": "16.14.0",
     "react-bootstrap": "^1.5.2",
-    "react-color": "^2.19.3",
+    "react-color-hook": "^1.0.5",
     "react-dom": "16.14.0",
     "react-scripts": "3.4.3",
     "styled-components": "^5.2.0",
