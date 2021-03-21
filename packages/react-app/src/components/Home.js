@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import Customizer from "./Customizer";
-import Frame from "./Frame";
+import NftFrame from "./NftFrame";
 import "./Home.css";
 
 function Home() {
@@ -11,7 +11,7 @@ function Home() {
 
   return (
     <Container className="d-flex flex-column align-items-center">
-      <Frame
+      <NftFrame
         backgroundColor={backgroundColor}
         textColor={textColor}
         itemId={itemId}
